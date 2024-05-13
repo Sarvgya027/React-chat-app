@@ -1,0 +1,104 @@
+.chatlist {
+  
+  flex: 1;
+  overflow-y: scroll;
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+
+ 
+
+    .searchBar {
+      flex: 1;
+      background-color: rgba(17, 25, 40, 0.5);
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+      padding: 4px;
+      position: relative;
+      left: -30px;
+
+      input {
+        padding-left: 10px;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 100%;
+        flex: 1;
+      }
+    }
+
+    .plus {
+      background-color: rgba(17, 25, 40, 0.5);
+      padding: 10px;
+      border-radius: 30px;
+      cursor: pointer;
+      width: 35px;
+      position: relative;
+      top: -45px;
+      right: -130px;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #8888;
+    width: 100%;
+    position: relative;
+    top: -30px;
+
+
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texts{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-self: center;
+  
+
+      span{
+        font-weight: 500;
+      }
+      
+      p{
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+.chatlist::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chatlist::-webkit-scrollbar-thumb {
+  background-color: #8888;
+  border-radius: 5px;
+}
+
+
